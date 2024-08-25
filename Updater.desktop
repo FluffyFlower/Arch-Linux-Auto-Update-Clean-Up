@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Categories=System;
+Comment[en_GB]=System Updater Script
+Comment=System Updater Script
+Exec=/home/your-username/.helper-scripts/auto-update/update-launcher.sh
+Icon=/home/your-username/.helper-scripts/auto-update/Resources/Icon/auto-update-icon.png
+Name[en_GB]=Updater
+Name=Updater
+StartupNotify=true
+Terminal=false
+Type=Application
+X-KDE-SubstituteUID=false
