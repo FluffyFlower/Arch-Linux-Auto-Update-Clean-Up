@@ -54,6 +54,17 @@ Either double click the .desktop file, or run the following in a terminal:
 ```
 ## Notes:
 
+- You will need to edit the `sudoers` file in `/etc/`, instructions below:
+  1. Open a terminal
+  ```
+  cd /etc
+  sudo nano
+  ```
+  2. Open the sudoers file using ctrl + R, and typing in **sudoers**
+  3. Add the following to the end of your sudoers file:
+  ```
+  yourusername ALL=(ALL) NOPASSWD: /usr/bin/pacman, /usr/bin/paccache, /usr/bin/paru
+  ```
 - Ensure you have the required permissions and dependencies installed on your system for the scripts to function correctly.
 - Review and edit any script configurations as needed to tailor the setup to your specific environment and preferences.
 - This project uses kdialog, due to this it is KDE focused.
