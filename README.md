@@ -56,6 +56,7 @@ Either double click the .desktop file, or run the following in a terminal:
 
 - Ensure you have the required permissions and dependencies installed on your system for the scripts to function correctly.
 - Review and edit any script configurations as needed to tailor the setup to your specific environment and preferences.
+- This project uses kdialog, due to this it is KDE focused.
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
