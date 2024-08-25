@@ -65,6 +65,8 @@ Either double click the .desktop file, or run the following in a terminal:
   ```
   yourusername ALL=(ALL) NOPASSWD: /usr/bin/pacman, /usr/bin/paccache, /usr/bin/paru
   ```
+  4. Save using ctrl + O, and typing **sudoers**
+  5. ctrl + x to exit
 - Ensure you have the required permissions and dependencies installed on your system for the scripts to function correctly.
 - Review and edit any script configurations as needed to tailor the setup to your specific environment and preferences.
 - This project uses kdialog, due to this it is KDE focused.
