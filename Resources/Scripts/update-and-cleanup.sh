@@ -4,7 +4,7 @@
 #
 # Author: FluffyFlower (Martin C. Wylde)
 # Date: 2024-08-25
-# Version: 1.3.1
+# Version: 1.3.2
 #
 # This script performs system updates and cleanup tasks for an Arch Linux system.
 # It updates the keyring, system packages, AUR packages, clears the package cache,
@@ -25,10 +25,10 @@ NOTIFY_SCRIPT=$(realpath "$SCRIPTS_PATH/notify-desktop.sh")
 # Paths to logs
 LOGS_PATH=$(realpath "$HOME/.helper-scripts/auto-update/Logs")
 UPDATE_LOG=$(realpath "$LOGS_PATH/update-log.txt")
-KEYRING_LOG=$(realpath "$LOGS_PATH/update-$DATE.txt")
-SYSTEM_LOG=$(realpath "$LOGS_PATH/update-$DATE.txt")
-CACHE_LOG=$(realpath "$LOGS_PATH/update-$DATE.txt")
-ORPHAN_LOG=$(realpath "$LOGS_PATH/update-$DATE.txt")
+KEYRING_LOG=$(realpath "$LOGS_PATH/Keyring/update-$DATE.txt")
+SYSTEM_LOG=$(realpath "$LOGS_PATH/System/update-$DATE.txt")
+CACHE_LOG=$(realpath "$LOGS_PATH/Cache/update-$DATE.txt")
+ORPHAN_LOG=$(realpath "$LOGS_PATH/Orphans/update-$DATE.txt")
 
 # Check if the log file exists and if the last update was within the last 24 hours
 if [[ -f "$UPDATE_LOG" ]]; then
