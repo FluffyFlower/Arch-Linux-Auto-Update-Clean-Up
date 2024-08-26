@@ -92,7 +92,7 @@ $NOTIFY_SCRIPT "cache-cleanup-completed"
 $NOTIFY_SCRIPT "orphan-removal-started"
 echo "***Orphaned packages removal started***" | tee $ORPHAN_LOG
 if sudo pacman -Qtdq &> /dev/null; then
-    sudo pacman -Rns $(pacman -Qtdq) 2>&1 | tee -a $ORPHAN_LOG
+    sudo pacman -Rns $(pacman -Qtdq) --noconfirm 2>&1 | tee -a $ORPHAN_LOG
     echo "***Orphaned packages removal complete***" | tee -a $ORPHAN_LOG
 else
     echo "***No orphaned packages to remove***" | tee -a $ORPHAN_LOG
