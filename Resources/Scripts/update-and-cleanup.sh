@@ -4,7 +4,7 @@
 #
 # Author: FluffyFlower (Martin C. Wylde)
 # Date: 2024-08-25
-# Version: 1.3.2
+# Version: 1.3.3
 #
 # This script performs system updates and cleanup tasks for an Arch Linux system.
 # It updates the keyring, system packages, AUR packages, clears the package cache,
